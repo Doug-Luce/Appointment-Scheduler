@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c7629f1-cbb2-4b80-8d5d-4e707839a841" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchedulerApplication/com/dougluce/SchedulerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchedulerApplication/com/dougluce/SchedulerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchedulerApplication/com/dougluce/controller/AppointmentsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchedulerApplication/com/dougluce/controller/AppointmentsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchedulerApplication/com/dougluce/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchedulerApplication/com/dougluce/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dougluce/SchedulerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dougluce/SchedulerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dougluce/controller/AppointmentAddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dougluce/controller/AppointmentAddController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dougluce/controller/AppointmentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dougluce/controller/AppointmentsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dougluce/controller/CustomersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dougluce/controller/CustomersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dougluce/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dougluce/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dougluce/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dougluce/controller/MainController.java" afterDir="false" />
-    </list>
+    <list default="true" id="7c7629f1-cbb2-4b80-8d5d-4e707839a841" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +107,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/dougluce/controller/AppointmentAddController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
+            <state relative-caret-position="126">
               <caret line="160" column="54" selection-start-line="160" selection-start-column="54" selection-end-line="160" selection-end-column="54" />
             </state>
           </provider>
@@ -226,6 +215,7 @@
     <option name="width" value="1665" />
     <option name="height" value="977" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -295,7 +285,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553974573862" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553974679763" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="SQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -304,7 +294,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -350,7 +340,7 @@
       <updated>1552149705977</updated>
       <workItem from="1553043011917" duration="58502000" />
       <workItem from="1553729128137" duration="11648000" />
-      <workItem from="1553883437843" duration="10915000" />
+      <workItem from="1553883437843" duration="11035000" />
     </task>
     <task id="LOCAL-00001" summary="Adds database connection.">
       <created>1552348475160</created>
@@ -370,7 +360,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81065000" />
+    <option name="totallyTimeSpent" value="81185000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -383,7 +373,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="888" y="25" width="1665" height="977" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19470116" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -402,8 +391,8 @@
       <window_info anchor="bottom" id="Debug" order="7" weight="0.1559322" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="TODO" order="10" visible="true" weight="0.32881355" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.19887006" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.32881355" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.35254237" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.64093566" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.22259887" />
@@ -758,7 +747,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dougluce/controller/AppointmentAddController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
+        <state relative-caret-position="126">
           <caret line="160" column="54" selection-start-line="160" selection-start-column="54" selection-end-line="160" selection-end-column="54" />
         </state>
       </provider>
