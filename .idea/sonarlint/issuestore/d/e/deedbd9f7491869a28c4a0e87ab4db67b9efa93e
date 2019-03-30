@@ -1,0 +1,38 @@
+
+nsquid:S2095é"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ç¼—È8¦Œ £œ-
+nsquid:S2095Ú"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(åçˆã8¦Œ £œ-
+Ysquid:S1141­"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¦Œ £œ-
+W
+squid:S106×"9Replace this use of System.out or System.err by a logger.(ê¾ú®8¦Œ £œ-
+Qsquid:S1135Û"2Complete the task associated to this TODO comment.(¶¶¤Ú8¦Œ £œ-
+Qsquid:S1135Ã"2Complete the task associated to this TODO comment.(Ù©Úã8¦Œ £œ-
+Bsquid:S1148Ñ"#Use a logger to log this exception.(òçøì8¦Œ £œ-
+Bsquid:S1148‚"#Use a logger to log this exception.(òçøì8¦Œ £œ-
+\
+squid:S106±"9Replace this use of System.out or System.err by a logger.(ş¼ªùÿÿÿÿ8¦Œ £œ-
+W
+squid:S106ç"9Replace this use of System.out or System.err by a logger.(—ºİŒ8¦Œ £œ-
+Bsquid:S1148ö"#Use a logger to log this exception.(òçøì8¦Œ £œ-
+nsquid:S2095š"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÆÄ„­8¦Œ £œ-
+fsquid:S2095•"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ŒçÔì8¦Œ £œ-
+Bsquid:S1148´"#Use a logger to log this exception.(òçøì8¦Œ £œ-
+ssquid:S2095ş"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(•µª¼şÿÿÿÿ8¦Œ £œ-
+nsquid:S2095¿"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‚ĞÕƒ8¦Œ £œ-
+Qsquid:S1135Û"2Complete the task associated to this TODO comment.(¡İ÷²8¦Œ £œ-
+\
+squid:S106ñ"9Replace this use of System.out or System.err by a logger.(í˜«şÿÿÿÿ8¦Œ £œ-
+fsquid:S2095¥"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ŒçÔì8¦Œ £œ-
+Tsquid:S3655Ã"5Call "result.isPresent()" before accessing the value.(ÃÇûŞ8¦Œ £œ-
+ksquid:S2095®"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(¿©ƒÉıÿÿÿÿ8¦Œ £œ-
+Qsquid:S1135ì"2Complete the task associated to this TODO comment.(Ï¸¦’8¦Œ £œ-
+Bsquid:S1148›"#Use a logger to log this exception.(òçøì8¦Œ £œ-
+\
+squid:S106é"9Replace this use of System.out or System.err by a logger.(Ñ—¾‰şÿÿÿÿ8¦Œ £œ-
+ssquid:S2095”"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(»ÆÅ×ÿÿÿÿÿ8¦Œ £œ-
+msquid:HiddenFieldCheckİ">Rename "customerId" which hides the field declared at line 52.(ãÆÍàúÿÿÿÿ8¦Œ £œ-
+’"squid:ClassVariableVisibilityCheckF"XMake currentState a static final constant or non-public and provide accessors if needed.(ÃøÏÛüÿÿÿÿ8¦Œ £œ-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÉÎò„ûÿÿÿÿ8¦Œ £œ-
+Bsquid:S1148·"#Use a logger to log this exception.(òçøì8¦Œ £œ-
+ssquid:S2095¤"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(•†Å·ıÿÿÿÿ8¦Œ £œ-
+Qsquid:S1135 "2Complete the task associated to this TODO comment.(Ù©Úã8¦Œ £œ-

@@ -1,0 +1,8 @@
+
+O
+squid:S106j"9Replace this use of System.out or System.err by a logger.(ÕêáÔ
+:squid:S1148n"#Use a logger to log this exception.(òçøì
+csquid:S2095d"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ÌÚÖáşÿÿÿÿ
+T
+squid:S106g"9Replace this use of System.out or System.err by a logger.(ïó·Íøÿÿÿÿ
+ksquid:S2095a"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‹ºÖ‡úÿÿÿÿ

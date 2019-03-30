@@ -1,0 +1,7 @@
+
+isquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿Ãüü
+lsquid:UselessImportCheck"HRemove this unused import 'javafx.beans.property.SimpleIntegerProperty'.(©Úž¡
+ksquid:UselessImportCheck"GRemove this unused import 'javafx.beans.property.SimpleStringProperty'.(ûÐùÑ
+nsquid:S00117W"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒÝ”çýÿÿÿÿ
+esquid:S00116"MRename this field "ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ÞÒï
+Ysquid:S00107"AConstructor has 8 parameters, which is greater than 7 authorized.(¿Ãüü

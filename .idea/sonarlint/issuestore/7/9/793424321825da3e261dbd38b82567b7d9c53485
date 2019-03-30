@@ -1,0 +1,13 @@
+
+msquid:S2095\"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(…­Êñ8×£§œ-
+V
+squid:S106L"9Replace this use of System.out or System.err by a logger.(Ïˆµ8ù–€§œ-
+T
+squid:S1065"9Replace this use of System.out or System.err by a logger.(ÀÍğÃÿÿÿÿÿ
+[
+squid:S106F"9Replace this use of System.out or System.err by a logger.(Îâò ıÿÿÿÿ8ÏÛ‘§œ-
+V
+squid:S106r"9Replace this use of System.out or System.err by a logger.(Ïˆµ8ŒÄ§œ-
+O
+squid:S106<"9Replace this use of System.out or System.err by a logger.(œ²ş»
+Asquid:S1148m"#Use a logger to log this exception.(òçøì8Ö•«©œ-

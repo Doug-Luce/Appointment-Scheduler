@@ -1,0 +1,14 @@
+
+msquid:S2095R"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™ÆÉÉ8­’Ù­œ-
+V
+squid:S106E"9Replace this use of System.out or System.err by a logger.(Œå°È8æ›µ¯œ-
+nsquid:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¿·µ¡8»¹é¯œ-
+[squid:UselessImportCheck"0Remove this unused import 'javax.xml.soap.Text'.(ŒşÄ™8æ¯Á¯œ-
+Asquid:S1148^"#Use a logger to log this exception.(òçøì8°ÃÙ­œ-
+esquid:S2095S"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ŒçÔì8­’Ù­œ-
+[
+squid:S106:"9Replace this use of System.out or System.err by a logger.(ù¸–üÿÿÿÿ8úÈœ­œ-
+Dsquid:S1170"!Make this final field static too.(ØîÖÄûÿÿÿÿ8Ô‚á­œ-
+Rsquid:S1068"5Remove this unused "dateTimeFormatter" private field.(Ò¹ò-8Õ÷¶®œ-
+Vsquid:S1135—"2Complete the task associated to this TODO comment.(È¡éŒûÿÿÿÿ8şÑÿ¯œ-
+Bsquid:S1148£"#Use a logger to log this exception.(òçøì8·êè¯œ-

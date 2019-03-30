@@ -1,0 +1,37 @@
+
+R
+"src/com/dougluce/view/reports.fxml,7/c/7cd7c17e4d805f87b60acef9cebc13ea6a4a7429
+W
+'src/com/dougluce/view/appointments.fxml,d/2/d2ee40262974e01366e298a3c44b2c13612f7c84
+P
+ src/com/dougluce/view/login.fxml,5/0/5063fd3cd57ff1e0564700e6ce94f3809f48eaea
+g
+7src/com/dougluce/controller/AppointmentsController.java,c/a/ca49dfce0d657425d865afc9613fc83e754d4c69
+`
+0src/com/dougluce/controller/LoginController.java,b/b/bb2316cb4339b3d3ff9ebc69cef8376f93e1d225
+_
+/src/com/dougluce/controller/MainController.java,4/6/464ce8781e830567c4a359b414f67a15d8d83d61
+Z
+*src/com/dougluce/SchedulerApplication.java,0/3/0325c89df3b3fa0561b0141135cfe5295e769fb3
+d
+4src/com/dougluce/controller/CustomersController.java,d/e/deedbd9f7491869a28c4a0e87ab4db67b9efa93e
+O
+src/com/dougluce/view/main.fxml,e/0/e043f154d821669814360e6d9b4521727deec93e
+T
+$src/com/dougluce/view/customers.fxml,3/9/39be25a468998dca3ee8ee4ac8a807b2945d2613
+]
+-src/com/dougluce/utility/DatabaseManager.java,c/9/c9e9d8cbfe03616470411d526bbd698fc8c62ed6
+P
+ src/com/dougluce/model/City.java,b/7/b793330c95a25bc1cfb74aa3fc68107d9d680c96
+T
+$src/com/dougluce/model/Customer.java,9/c/9c5bc703c2f175d01d52979907b3e1b8fed6fb39
+Z
+*src/com/dougluce/view/appointmentEdit.fxml,5/5/55d9bd5e35e35f908133705be9554aa9d8480822
+Y
+)src/com/dougluce/view/appointmentAdd.fxml,7/4/7467cc2e8619b82279b0d927505631a242772e9c
+j
+:src/com/dougluce/controller/AppointmentEditController.java,7/9/793424321825da3e261dbd38b82567b7d9c53485
+W
+'src/com/dougluce/model/Appointment.java,9/f/9fdc4a3af7fc9f8e766fe9782d343b409abd6965
+i
+9src/com/dougluce/controller/AppointmentAddController.java,f/e/fec89f5336c61cfea5faf1aefdfdfb8fe950f674
