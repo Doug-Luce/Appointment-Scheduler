@@ -55,6 +55,7 @@ public class SchedulerApplication extends Application {
 
 
   public void showMain() throws IOException {
+    AppointmentAlert appointmentAlert = new AppointmentAlert(currentUser);
     FXMLLoader loader = new FXMLLoader(getClass().getResource("view/main.fxml"));
     mainWindow = loader.load();
 
@@ -72,7 +73,7 @@ public class SchedulerApplication extends Application {
 
     // Show the customers pane on login
     showCustomersPane();
-
+    appointmentAlert.checkAppointmentTime();
   }
 
   public void showCustomersPane() throws IOException {

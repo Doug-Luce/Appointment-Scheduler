@@ -225,8 +225,15 @@ public class CustomersController implements Initializable {
   @FXML
   private void handleEdit() {
     // TODO Show user alert when customer is not selected
-    currentState = CustomerViewState.EDIT;
-    setEditMode(true);
+    if(tableView.getSelectionModel().getSelectedItem() == null) {
+      Alert alert = new Alert(Alert.AlertType.ERROR);
+      alert.setTitle("No Customer Selected");
+      alert.setContentText("Select a customer from the table to edit.");
+      alert.showAndWait();
+    } else {
+      currentState = CustomerViewState.EDIT;
+      setEditMode(true);
+    }
   }
 
   @FXML

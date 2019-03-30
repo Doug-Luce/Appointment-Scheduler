@@ -185,7 +185,7 @@ public class AppointmentsController implements Initializable {
     try {
       PreparedStatement statement = DatabaseManager.getDatabaseConnection().prepareStatement(sqlStatement);
       ResultSet set = statement.executeQuery();
-
+      // TODO verify that the time being displayed in the table is correct. It appears that it's not showing the right times.
       while(set.next()) {
         Customer customer = new Customer(set.getString("customer.customerName"), set.getString("appointment.customerId"));
         // Build correct local start time

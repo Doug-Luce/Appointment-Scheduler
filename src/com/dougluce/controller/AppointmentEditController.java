@@ -25,6 +25,7 @@ public class AppointmentEditController implements Initializable {
   private SchedulerApplication schedulerApplication;
   private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
   private DateTimeFormatter timeFormatter = DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT);
+  private String username;
 
   @FXML
   private TextField appointmentTitle;
@@ -52,6 +53,9 @@ public class AppointmentEditController implements Initializable {
     Platform.runLater(() -> {
       System.out.println(appointment.toString());
       populateAppointmentForm(appointment);
+      username = schedulerApplication.getCurrentUser().getUserName();
+      contact.setText(username);
+      contact.setEditable(false);
     });
   }
 
@@ -140,7 +144,6 @@ public class AppointmentEditController implements Initializable {
     LocalDateTime endLocalDateTime = LocalDateTime.parse(appointment.getEndTime(), dateTimeFormatter);
 
     appointmentTitle.setText(appointment.getTitle());
-    contact.setText(appointment.getContact());
     typeComboBox.setItems(types);
     typeComboBox.setValue(appointment.getDescription());
     startTimeComboBox.setItems(startTimes);

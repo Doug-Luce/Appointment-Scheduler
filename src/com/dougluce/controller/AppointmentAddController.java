@@ -26,7 +26,7 @@ import java.util.ResourceBundle;
 
 public class AppointmentAddController implements Initializable {
   private SchedulerApplication schedulerApplication;
-  private final String getCustomerNamesStatement = "select customerName, customerId from customer ORDER BY customerName";
+  private final String getCustomerNamesStatement = "SELECT customerName, customerId FROM customer ORDER BY customerName";
   private DateTimeFormatter timeFormatter = DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT);
 
   @FXML
@@ -60,6 +60,8 @@ public class AppointmentAddController implements Initializable {
     populateAppointmentForm();
     Platform.runLater(() -> {
       username = schedulerApplication.getCurrentUser().getUserName();
+      contact.setText(username);
+      contact.setEditable(false);
     });
 
   }
