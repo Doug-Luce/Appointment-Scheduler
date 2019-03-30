@@ -224,7 +224,6 @@ public class CustomersController implements Initializable {
 
   @FXML
   private void handleEdit() {
-    // TODO Show user alert when customer is not selected
     if(tableView.getSelectionModel().getSelectedItem() == null) {
       Alert alert = new Alert(Alert.AlertType.ERROR);
       alert.setTitle("No Customer Selected");
