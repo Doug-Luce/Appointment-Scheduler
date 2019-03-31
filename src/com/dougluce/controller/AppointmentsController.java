@@ -188,9 +188,13 @@ public class AppointmentsController implements Initializable {
       // TODO verify that the time being displayed in the table is correct. It appears that it's not showing the right times.
       while(set.next()) {
         Customer customer = new Customer(set.getString("customer.customerName"), set.getString("appointment.customerId"));
-        // Build correct local start time
+        // Get the start time as a Timestamp
         Timestamp timestampStart = set.getTimestamp("appointment.start");
+
+        // Convert the start timestamp into ZonedDateTime
         ZonedDateTime zoneDateStart = timestampStart.toLocalDateTime().atZone(ZoneId.of("UTC"));
+
+
         ZonedDateTime localStartTime = zoneDateStart.withZoneSameInstant(zoneId);
 
         // Build correct local end time
@@ -201,6 +205,7 @@ public class AppointmentsController implements Initializable {
         appointmentData.add(new Appointment(set.getString("appointment.title"), set.getString("appointment.description"),
             localStartTime.format(timeDTF), localEndTime.format(timeDTF), set.getString("appointment.contact"),
             customer, set.getString("appointment.appointmentId")));
+        System.out.println(set.getTimestamp("appointment.start"));
       }
 
       // Using a lambda for efficiency

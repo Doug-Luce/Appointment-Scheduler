@@ -26,13 +26,9 @@ public class AppointmentAlert {
         String customerName = resultSet.getString("customerName");
         LocalDateTime appointmentStartTime = resultSet.getTimestamp("start").toLocalDateTime();
         LocalDateTime currentTime = LocalDateTime.now();
-        System.out.println(appointmentStartTime);
-        System.out.println(currentTime.plusMinutes(15));
-        System.out.println(currentTime.isBefore(appointmentStartTime.plusMinutes(15)));
         if (currentTime.isBefore(appointmentStartTime.plusMinutes(15))) {
           Alert alert = new Alert(Alert.AlertType.INFORMATION);
           alert.setTitle("Upcoming Appointment");
-          // TODO update this string to contain the appointment information
           alert.setContentText("You have an upcoming appointment with " + customerName + " at " +
               appointmentStartTime.toLocalTime().format(DateTimeFormatter.ofPattern("h:mm a")));
           alert.showAndWait();
