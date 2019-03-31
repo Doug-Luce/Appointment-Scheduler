@@ -144,11 +144,14 @@ public class AppointmentAddController implements Initializable {
     LocalDate localDate = datePicker.getValue();
     LocalTime startTime = LocalTime.parse(appointment.getStartTime(), timeFormatter);
     LocalTime endTime = LocalTime.parse(appointment.getEndTime(), timeFormatter);
+
     LocalDateTime startDateTime = LocalDateTime.of(localDate, startTime);
     LocalDateTime endDateTime = LocalDateTime.of(localDate, endTime);
 
-    ZonedDateTime startUTC = startDateTime.atZone(ZoneId.systemDefault());
-    ZonedDateTime endUTC = endDateTime.atZone(ZoneId.systemDefault());
+    // ZonedDateTime startUTC = startDateTime.atZone(ZoneId.systemDefault());
+    // ZonedDateTime endUTC = endDateTime.atZone(ZoneId.systemDefault());
+    ZonedDateTime startUTC = startDateTime.atZone(ZoneId.systemDefault()).withZoneSameInstant(ZoneId.of("UTC"));
+    ZonedDateTime endUTC = endDateTime.atZone(ZoneId.systemDefault()).withZoneSameInstant(ZoneId.of("UTC"));
 
     Timestamp startTimeStamp = Timestamp.valueOf(startUTC.toLocalDateTime());
     Timestamp endTimeStamp = Timestamp.valueOf(endUTC.toLocalDateTime());
@@ -159,8 +162,8 @@ public class AppointmentAddController implements Initializable {
       statement.setString(2, appointment.getTitle());
       statement.setString(3, appointment.getDescription());
       statement.setString(4, appointment.getContact());
-      statement.setString(5, startTimeStamp.toString());
-      statement.setString(6, endTimeStamp.toString());
+      statement.setTimestamp(5, startTimeStamp);
+      statement.setTimestamp(6, endTimeStamp);
       statement.setString(7, username);
       statement.setString(8, username);
 

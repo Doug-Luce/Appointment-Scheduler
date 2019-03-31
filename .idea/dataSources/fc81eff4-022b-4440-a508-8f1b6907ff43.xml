@@ -912,14 +912,12 @@
     </column>
     <column id="225" parent="202" name="start">
       <Position>6</Position>
-      <DataType>datetime|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="226" parent="202" name="end">
       <Position>7</Position>
-      <DataType>datetime|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="227" parent="202" name="createDate">

@@ -85,8 +85,8 @@ public class AppointmentEditController implements Initializable {
     LocalDateTime startDateTime = LocalDateTime.of(localDate, startTime);
     LocalDateTime endDateTime = LocalDateTime.of(localDate, endTime);
 
-    ZonedDateTime startUTC = startDateTime.atZone(ZoneId.systemDefault());
-    ZonedDateTime endUTC = endDateTime.atZone(ZoneId.systemDefault());
+    ZonedDateTime startUTC = startDateTime.atZone(ZoneId.systemDefault()).withZoneSameInstant(ZoneId.of("UTC"));
+    ZonedDateTime endUTC = endDateTime.atZone(ZoneId.systemDefault()).withZoneSameInstant(ZoneId.of("UTC"));
 
     Timestamp startTimeStamp = Timestamp.valueOf(startUTC.toLocalDateTime());
     Timestamp endTimeStamp = Timestamp.valueOf(endUTC.toLocalDateTime());
@@ -98,8 +98,8 @@ public class AppointmentEditController implements Initializable {
       statement.setString(2, appointment.getTitle());
       statement.setString(3, appointment.getDescription());
       statement.setString(4, appointment.getContact());
-      statement.setString(5, startTimeStamp.toString());
-      statement.setString(6, endTimeStamp.toString());
+      statement.setTimestamp(5, startTimeStamp);
+      statement.setTimestamp(6, endTimeStamp);
       statement.setString(7, appointment.getAppointmentId());
 
       int rowsUpdated = statement.executeUpdate();
@@ -115,8 +115,6 @@ public class AppointmentEditController implements Initializable {
   }
 
   private void populateAppointmentForm(Appointment appointment) {
-    System.out.println(appointment);
-
     ObservableList<String> types = FXCollections.observableArrayList();
     ObservableList<String> startTimes = FXCollections.observableArrayList();
     ObservableList<String> endTimes = FXCollections.observableArrayList();

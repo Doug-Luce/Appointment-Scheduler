@@ -23,7 +23,6 @@ import com.dougluce.SchedulerApplication;
 import com.dougluce.model.Appointment;
 import com.dougluce.model.Customer;
 import com.dougluce.utility.DatabaseManager;
-import javafx.application.Platform;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -185,27 +184,25 @@ public class AppointmentsController implements Initializable {
     try {
       PreparedStatement statement = DatabaseManager.getDatabaseConnection().prepareStatement(sqlStatement);
       ResultSet set = statement.executeQuery();
-      // TODO verify that the time being displayed in the table is correct. It appears that it's not showing the right times.
       while(set.next()) {
         Customer customer = new Customer(set.getString("customer.customerName"), set.getString("appointment.customerId"));
+
         // Get the start time as a Timestamp
         Timestamp timestampStart = set.getTimestamp("appointment.start");
 
         // Convert the start timestamp into ZonedDateTime
         ZonedDateTime zoneDateStart = timestampStart.toLocalDateTime().atZone(ZoneId.of("UTC"));
-
-
         ZonedDateTime localStartTime = zoneDateStart.withZoneSameInstant(zoneId);
 
         // Build correct local end time
         Timestamp timestampEnd = set.getTimestamp("appointment.end");
         ZonedDateTime zoneDateEnd = timestampEnd.toLocalDateTime().atZone(ZoneId.of("UTC"));
+
         ZonedDateTime localEndTime = zoneDateEnd.withZoneSameInstant(zoneId);
 
         appointmentData.add(new Appointment(set.getString("appointment.title"), set.getString("appointment.description"),
             localStartTime.format(timeDTF), localEndTime.format(timeDTF), set.getString("appointment.contact"),
             customer, set.getString("appointment.appointmentId")));
-        System.out.println(set.getTimestamp("appointment.start"));
       }
 
       // Using a lambda for efficiency
