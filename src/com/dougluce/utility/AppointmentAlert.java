@@ -15,6 +15,7 @@ public class AppointmentAlert {
     this.currentUser = currentUser;
   }
 
+  // TODO Fix bug with this code showing upcoming appointments early
   public void checkAppointmentTime() {
     String getAppointmentsStatement = "SELECT start, customerName FROM appointment, customer WHERE contact = ? AND appointment.customerId = customer.customerId";
     try {

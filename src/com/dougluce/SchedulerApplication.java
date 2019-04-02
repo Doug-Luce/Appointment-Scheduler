@@ -84,11 +84,6 @@ public class SchedulerApplication extends Application {
     mainWindow.setCenter(customersPane);
   }
 
-  public void showReportsPane() throws IOException {
-    GridPane reportsPane = FXMLLoader.load(getClass().getResource("view/reports.fxml"));
-    mainWindow.setCenter(reportsPane);
-  }
-
   public void showAppointmentsPane() throws IOException {
     FXMLLoader loader = new FXMLLoader(getClass().getResource("view/appointments.fxml"));
     GridPane appointmentsPane = loader.load();
@@ -112,6 +107,26 @@ public class SchedulerApplication extends Application {
     AppointmentAddController appointmentAddController = loader.getController();
     appointmentAddController.setSchedulerApplication(this);
     mainWindow.setCenter(appointmentsAddPane);
+  }
+
+  public void showSchedulePane() throws IOException {
+    FXMLLoader loader = new FXMLLoader(getClass().getResource("view/schedule.fxml"));
+    GridPane schedulePane = loader.load();
+    ScheduleController scheduleController = loader.getController();
+    scheduleController.setSchedulerApplication(this);
+    mainWindow.setCenter(schedulePane);
+  }
+
+  public void showReportsByMonthPane() throws IOException {
+    FXMLLoader loader = new FXMLLoader(getClass().getResource("view/reportsByMonth.fxml"));
+    GridPane reportsByMonthPane = loader.load();
+    mainWindow.setCenter(reportsByMonthPane);
+  }
+
+  public void showReportsByWeekPane() throws IOException {
+    FXMLLoader loader = new FXMLLoader(getClass().getResource("view/reportsByWeek.fxml"));
+    GridPane reportsByWeekPane = loader.load();
+    mainWindow.setCenter(reportsByWeekPane);
   }
 
   public void setCurrentUser(User currentUser) {

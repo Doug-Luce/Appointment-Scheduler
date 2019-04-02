@@ -55,8 +55,16 @@ public class MainController implements Initializable {
     schedulerApplication.showAppointmentsPane();
   }
 
-  public void showReportsPane() throws IOException {
-    schedulerApplication.showReportsPane();
+  public void showSchedulePane() throws IOException {
+    schedulerApplication.showSchedulePane();
+  }
+
+  public void showReportsByMonthPane() throws IOException {
+    schedulerApplication.showReportsByMonthPane();
+  }
+
+  public void showReportsByWeekPane() throws IOException {
+    schedulerApplication.showReportsByWeekPane();
   }
 
   public void exitMenuHandler(ActionEvent e) {

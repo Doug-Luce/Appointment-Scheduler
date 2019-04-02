@@ -2,15 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c7629f1-cbb2-4b80-8d5d-4e707839a841" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fc81eff4-022b-4440-a508-8f1b6907ff43.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fc81eff4-022b-4440-a508-8f1b6907ff43.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dougluce/controller/ReportsByMonthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dougluce/controller/ReportsByWeekController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dougluce/controller/ScheduleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dougluce/view/reportsByMonth.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dougluce/view/reportsByWeek.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dougluce/view/schedule.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchedulerApplication/com/dougluce/controller/AppointmentAddController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchedulerApplication/com/dougluce/controller/AppointmentAddController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SchedulerApplication/com/dougluce/controller/AppointmentEditController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchedulerApplication/com/dougluce/controller/AppointmentEditController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SchedulerApplication/com/dougluce/SchedulerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchedulerApplication/com/dougluce/SchedulerApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SchedulerApplication/com/dougluce/controller/AppointmentsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchedulerApplication/com/dougluce/controller/AppointmentsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dougluce/controller/AppointmentAddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dougluce/controller/AppointmentAddController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dougluce/controller/AppointmentEditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dougluce/controller/AppointmentEditController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dougluce/controller/AppointmentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dougluce/controller/AppointmentsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SchedulerApplication/com/dougluce/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchedulerApplication/com/dougluce/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SchedulerApplication/com/dougluce/utility/AppointmentAlert.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchedulerApplication/com/dougluce/utility/AppointmentAlert.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SchedulerApplication/com/dougluce/view/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SchedulerApplication/com/dougluce/view/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SchedulerApplication/com/dougluce/view/reports.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dougluce/SchedulerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dougluce/SchedulerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dougluce/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dougluce/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dougluce/utility/AppointmentAlert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dougluce/utility/AppointmentAlert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dougluce/view/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dougluce/view/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dougluce/view/reports.fxml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/dougluce/SchedulerApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="75" column="44" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
+            <state relative-caret-position="300">
+              <caret line="123" column="3" lean-forward="true" selection-start-line="123" selection-start-column="3" selection-end-line="123" selection-end-column="3" />
               <folding>
                 <element signature="e#4021#4022#0" expanded="true" />
                 <element signature="e#4061#4062#0" expanded="true" />
@@ -73,15 +82,86 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/dougluce/controller/AppointmentsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="93" column="3" lean-forward="true" selection-start-line="93" selection-start-column="3" selection-end-line="93" selection-end-column="3" />
+            <state relative-caret-position="186">
+              <caret line="127" column="370" selection-start-line="127" selection-start-column="370" selection-end-line="127" selection-end-column="370" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5308#5309#0" expanded="true" />
-                <element signature="e#5367#5368#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/dougluce/view/reportsByMonth.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-end-line="21" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/dougluce/controller/ReportsByMonthController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="25" column="66" lean-forward="true" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/dougluce/controller/ReportsByWeekController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="22" column="244" selection-start-line="22" selection-start-column="244" selection-end-line="22" selection-end-column="244" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fc81eff4-022b-4440-a508-8f1b6907ff43/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="140" lean-forward="true" selection-end-column="195" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://fc81eff4-022b-4440-a508-8f1b6907ff43/schema/U05ABR/table/appointment">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/dougluce/controller/AppointmentAddController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="169" column="50" selection-start-line="169" selection-start-column="50" selection-end-line="169" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/dougluce/controller/CustomersController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="156" column="47" lean-forward="true" selection-start-line="156" selection-start-column="47" selection-end-line="156" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,14 +179,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>clearFOrm</find>
-      <find>deleteCustomer</find>
-      <find>button</find>
-      <find>please</find>
-      <find>showaddpane</find>
-      <find>showEditP</find>
-      <find>showEditPane</find>
-      <find>alert</find>
       <find>populate</find>
       <find>showby</find>
       <find>System.out</find>
@@ -119,16 +191,24 @@
       <find>Pre</find>
       <find>todo</find>
       <find>runlater</find>
-      <find>contact</find>
       <find>statement.</find>
       <find>.now</find>
       <find>appointment.start</find>
       <find>timestampstart</find>
-      <find>resultset</find>
       <find>start</find>
       <find>toString</find>
       <find>localStartTime</find>
       <find>startutc</find>
+      <find>center</find>
+      <find>mouse</find>
+      <find>username</find>
+      <find>sqlStatement</find>
+      <find>getandpop</find>
+      <find>timeDTF</find>
+      <find>contact</find>
+      <find>resultset</find>
+      <find>prepa</find>
+      <find>betwee</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -142,8 +222,6 @@
         <option value="$PROJECT_DIR$/src/bundles/Language_es.properties" />
         <option value="$PROJECT_DIR$/src/bundles/Language_en.properties" />
         <option value="$PROJECT_DIR$/src/bundles/Language_es_ES.properties" />
-        <option value="$PROJECT_DIR$/src/com/dougluce/view/reports.fxml" />
-        <option value="$PROJECT_DIR$/src/com/dougluce/view/main.fxml" />
         <option value="$PROJECT_DIR$/src/com/dougluce/model/City.java" />
         <option value="$PROJECT_DIR$/src/com/dougluce/utility/Validator.java" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.sql" />
@@ -152,7 +230,6 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/src/com/dougluce/view/customers.fxml" />
         <option value="$PROJECT_DIR$/src/com/dougluce/model/Customer.java" />
-        <option value="$PROJECT_DIR$/src/com/dougluce/model/Appointment.java" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fc81eff4-022b-4440-a508-8f1b6907ff43/console_1.sql" />
         <option value="$PROJECT_DIR$/src/com/dougluce/view/appointmentAdd.fxml" />
@@ -160,21 +237,31 @@
         <option value="$PROJECT_DIR$/src/com/dougluce/view/appointmentEdit.fxml" />
         <option value="$PROJECT_DIR$/src/com/dougluce/model/User.java" />
         <option value="$PROJECT_DIR$/src/com/dougluce/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/com/dougluce/controller/CustomersController.java" />
+        <option value="$PROJECT_DIR$/src/com/dougluce/controller/AppointmentEditController.java" />
+        <option value="$PROJECT_DIR$/src/com/dougluce/utility/AppointmentAlert.java" />
+        <option value="$PROJECT_DIR$/src/com/dougluce/view/reports.fxml" />
         <option value="$PROJECT_DIR$/src/com/dougluce/controller/MainController.java" />
+        <option value="$PROJECT_DIR$/src/com/dougluce/view/main.fxml" />
+        <option value="$PROJECT_DIR$/src/com/dougluce/controller/ReportsController.java" />
+        <option value="$PROJECT_DIR$/src/com/dougluce/view/schedule.fxml" />
+        <option value="$PROJECT_DIR$/src/com/dougluce/controller/AppointmentsController.java" />
+        <option value="$PROJECT_DIR$/src/com/dougluce/model/Appointment.java" />
+        <option value="$PROJECT_DIR$/src/com/dougluce/controller/ScheduleController.java" />
+        <option value="$PROJECT_DIR$/src/com/dougluce/view/reportsByMonth.fxml" />
+        <option value="$PROJECT_DIR$/src/com/dougluce/controller/AppointmentAddController.java" />
+        <option value="$PROJECT_DIR$/src/com/dougluce/view/reportsByWeek.fxml" />
         <option value="$PROJECT_DIR$/src/com/dougluce/SchedulerApplication.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fc81eff4-022b-4440-a508-8f1b6907ff43/console.sql" />
-        <option value="$PROJECT_DIR$/src/com/dougluce/controller/CustomersController.java" />
-        <option value="$PROJECT_DIR$/src/com/dougluce/utility/AppointmentAlert.java" />
-        <option value="$PROJECT_DIR$/src/com/dougluce/controller/AppointmentAddController.java" />
-        <option value="$PROJECT_DIR$/src/com/dougluce/controller/AppointmentEditController.java" />
-        <option value="$PROJECT_DIR$/src/com/dougluce/controller/AppointmentsController.java" />
+        <option value="$PROJECT_DIR$/src/com/dougluce/controller/ReportsByWeekController.java" />
+        <option value="$PROJECT_DIR$/src/com/dougluce/controller/ReportsByMonthController.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="10" />
     <option name="y" value="23" />
-    <option name="width" value="1435" />
+    <option name="width" value="1574" />
     <option name="height" value="977" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -247,7 +334,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554067622865" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554179902008" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="SQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -257,6 +344,11 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/dougluce/view" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -322,7 +414,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96934000" />
+    <option name="totallyTimeSpent" value="111022000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -334,10 +426,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="23" width="1435" height="977" extended-state="0" />
+    <frame x="10" y="23" width="1574" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22900215" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19843341" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -346,20 +438,20 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Console" order="2" weight="0.29943502" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="2" visible="true" weight="0.29943502" />
       <window_info anchor="bottom" id="Inspection Results" order="3" weight="0.32918552" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.319774" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.2101695" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.20338982" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.13672316" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.16836159" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.18079096" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.40677965" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.21694915" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.64093566" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.22259887" />
-      <window_info anchor="right" id="Database" order="0" weight="0.16666667" />
+      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.15731071" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -426,14 +518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dougluce/view/main.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
@@ -539,14 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dougluce/view/appointmentAdd.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dougluce/model/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
@@ -594,66 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dougluce/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="54" column="48" lean-forward="true" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fc81eff4-022b-4440-a508-8f1b6907ff43/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dougluce/view/reports.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dougluce/utility/AppointmentAlert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dougluce/controller/CustomersController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="237" column="7" lean-forward="true" selection-start-line="237" selection-start-column="7" selection-end-line="237" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dougluce/SchedulerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="75" column="44" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
-          <folding>
-            <element signature="e#4021#4022#0" expanded="true" />
-            <element signature="e#4061#4062#0" expanded="true" />
-            <element signature="e#4095#4096#0" expanded="true" />
-            <element signature="e#4123#4124#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dougluce/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-203">
@@ -661,13 +677,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://fc81eff4-022b-4440-a508-8f1b6907ff43/schema/U05ABR/table/appointment">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -681,31 +690,192 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dougluce/model/Appointment.java">
+    <entry file="file://$PROJECT_DIR$/src/com/dougluce/utility/AppointmentAlert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="28" column="123" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="123" />
+        <state relative-caret-position="180">
+          <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dougluce/controller/AppointmentAddController.java">
+    <entry file="file://$PROJECT_DIR$/src/com/dougluce/view/appointmentAdd.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dougluce/view/reports.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
-          <caret line="156" column="73" lean-forward="true" selection-start-line="156" selection-start-column="73" selection-end-line="156" selection-end-column="73" />
+          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dougluce/controller/ReportsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="16" selection-end-line="28" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/TableColumn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="704" column="17" selection-start-line="704" selection-start-column="17" selection-end-line="704" selection-end-column="17" />
+          <folding>
+            <element signature="e#28491#28492#0" expanded="true" />
+            <element signature="e#28527#28528#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dougluce/model/Appointment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dougluce/view/schedule.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="29" column="38" lean-forward="true" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dougluce/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="57" column="53" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dougluce/view/main.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/javafx-src.zip!/javafx/scene/chart/PieChart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="95" column="13" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dougluce/controller/ScheduleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dougluce/view/reportsByMonth.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-end-line="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dougluce/view/reportsByWeek.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="266" selection-start-line="10" selection-start-column="266" selection-end-line="10" selection-end-column="266" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dougluce/controller/AppointmentAddController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="169" column="50" selection-start-line="169" selection-start-column="50" selection-end-line="169" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dougluce/SchedulerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="123" column="3" lean-forward="true" selection-start-line="123" selection-start-column="3" selection-end-line="123" selection-end-column="3" />
+          <folding>
+            <element signature="e#4021#4022#0" expanded="true" />
+            <element signature="e#4061#4062#0" expanded="true" />
+            <element signature="e#4095#4096#0" expanded="true" />
+            <element signature="e#4123#4124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dougluce/controller/CustomersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="156" column="47" lean-forward="true" selection-start-line="156" selection-start-column="47" selection-end-line="156" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://fc81eff4-022b-4440-a508-8f1b6907ff43/schema/U05ABR/table/appointment">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dougluce/controller/AppointmentsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="93" column="3" lean-forward="true" selection-start-line="93" selection-start-column="3" selection-end-line="93" selection-end-column="3" />
+        <state relative-caret-position="186">
+          <caret line="127" column="370" selection-start-line="127" selection-start-column="370" selection-end-line="127" selection-end-column="370" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5308#5309#0" expanded="true" />
-            <element signature="e#5367#5368#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fc81eff4-022b-4440-a508-8f1b6907ff43/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="140" lean-forward="true" selection-end-column="195" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dougluce/controller/ReportsByWeekController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="22" column="244" selection-start-line="22" selection-start-column="244" selection-end-line="22" selection-end-column="244" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dougluce/controller/ReportsByMonthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" column="66" lean-forward="true" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

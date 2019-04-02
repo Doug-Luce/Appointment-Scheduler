@@ -21,9 +21,15 @@
             <items>
               <MenuItem mnemonicParsing="false" onAction="#showCustomersPane" text="Customers" />
               <MenuItem mnemonicParsing="false" onAction="#showAppointmentsPane" text="Appointments" />
-              <MenuItem mnemonicParsing="false" onAction="#showReportsPane" text="Reports" />
+              <MenuItem mnemonicParsing="false" onAction="#showSchedulePane" text="Schedule" />
             </items>
           </Menu>
+            <Menu mnemonicParsing="false" text="Reports">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showReportsByMonthPane" text="Reports by Month" />
+                    <MenuItem mnemonicParsing="false" onAction="#showReportsByWeekPane" text="Reports by Week" />
+                </items>
+            </Menu>
         </menus>
          <opaqueInsets>
             <Insets />
