@@ -1,13 +1,20 @@
 
-msquid:S2095\"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(…­Êñ8×£§œ-
-V
-squid:S106L"9Replace this use of System.out or System.err by a logger.(Ïˆµ8ù–€§œ-
+vsquid:S00117¢"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’Ä£æùÿÿÿÿ8ªÿı-
+msquid:S2095f"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(…­Êñ8×£§œ-
+vsquid:S00117£"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å›ïùÿÿÿÿÿ8ªÿı-
+vsquid:S00117¤"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ‚§“üÿÿÿÿ8ªÿı-
+vsquid:S00117¦"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»¬Û»ÿÿÿÿÿ8ªÿı-
+Bsquid:S1148ó"#Use a logger to log this exception.(òçøì8ªÿı-
+vsquid:S00117§"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿĞÑªşÿÿÿÿ8ªÿı-
+\squid:S1155Ô">Use isEmpty() to check whether the collection is empty or not.(¿½Æ78ªÿı-
+csquid:S2259Ì"DA "NullPointerException" could be thrown; "endUTC" is nullable here.(ÅÙ“Á8ªÿı-
+squid:S2259Ğ"["NullPointerException" will be thrown when invoking method "checkAppointmentForConflict()".(ÚÏ€·ıÿÿÿÿ8ªÿı-
+vsquid:S00117¥"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï¶ÛŒøÿÿÿÿ8ªÿı-
+vsquid:S00117ã"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦‘İşÿÿÿÿ8®®¢ş-
+csquid:UselessImportCheck"8Remove this unused import 'com.dougluce.model.Customer'.(¸ ¥8’Ìş-
+Ysquid:S1611Õ":Remove the parentheses around the "errorMessage" parameter(Èì‡–8ªÿı-
+Asquid:S1148w"#Use a logger to log this exception.(òçøì8Ö•«©œ-
+fsquid:S2095í"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ŒçÔì8ªÿı-
+nsquid:S2095æ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÕŒğ8ªÿı-
 T
-squid:S1065"9Replace this use of System.out or System.err by a logger.(ÀÍğÃÿÿÿÿÿ
-[
-squid:S106F"9Replace this use of System.out or System.err by a logger.(Îâò ıÿÿÿÿ8ÏÛ‘§œ-
-V
-squid:S106r"9Replace this use of System.out or System.err by a logger.(Ïˆµ8ŒÄ§œ-
-O
-squid:S106<"9Replace this use of System.out or System.err by a logger.(œ²ş»
-Asquid:S1148m"#Use a logger to log this exception.(òçøì8Ö•«©œ-
+squid:S106<"9Replace this use of System.out or System.err by a logger.(ÀÍğÃÿÿÿÿÿ

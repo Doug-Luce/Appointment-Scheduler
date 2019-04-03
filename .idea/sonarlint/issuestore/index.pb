@@ -1,6 +1,4 @@
 
-R
-"src/com/dougluce/view/reports.fxml,7/c/7cd7c17e4d805f87b60acef9cebc13ea6a4a7429
 W
 'src/com/dougluce/view/appointments.fxml,d/2/d2ee40262974e01366e298a3c44b2c13612f7c84
 P
@@ -35,3 +33,15 @@ W
 'src/com/dougluce/model/Appointment.java,9/f/9fdc4a3af7fc9f8e766fe9782d343b409abd6965
 i
 9src/com/dougluce/controller/AppointmentAddController.java,f/e/fec89f5336c61cfea5faf1aefdfdfb8fe950f674
+i
+9src/com/dougluce/controller/ReportsByMonthController.java,8/7/87b033e310d68994531dd34c40716e30b08c132e
+h
+8src/com/dougluce/controller/ReportsByWeekController.java,8/a/8aa738fc748833795ae12ef228107158c26d867c
+P
+ src/com/dougluce/model/User.java,a/2/a2dabe205241e80ca2f8ac73440fbcf13859bb9e
+[
++src/com/dougluce/utility/LoggerUtility.java,2/5/25dd1025c825c060537746a5949541fb3330371c
+^
+.src/com/dougluce/utility/AppointmentAlert.java,e/3/e323aab880e676e3946fa639a292be2b8d0ee553
+c
+3src/com/dougluce/controller/ScheduleController.java,4/0/404648546a1522d43a5956ad265771af9e2f90b8

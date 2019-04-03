@@ -1,38 +1,38 @@
 
-nsquid:S2095é"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ç¼—È8¦Œ £œ-
-nsquid:S2095Ú"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(åçˆã8¦Œ £œ-
-Ysquid:S1141­"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¦Œ £œ-
-W
-squid:S106×"9Replace this use of System.out or System.err by a logger.(ê¾ú®8¦Œ £œ-
-Qsquid:S1135Û"2Complete the task associated to this TODO comment.(¶¶¤Ú8¦Œ £œ-
-Qsquid:S1135Ã"2Complete the task associated to this TODO comment.(Ù©Úã8¦Œ £œ-
-Bsquid:S1148Ñ"#Use a logger to log this exception.(òçøì8¦Œ £œ-
-Bsquid:S1148‚"#Use a logger to log this exception.(òçøì8¦Œ £œ-
-\
-squid:S106±"9Replace this use of System.out or System.err by a logger.(ş¼ªùÿÿÿÿ8¦Œ £œ-
-W
-squid:S106ç"9Replace this use of System.out or System.err by a logger.(—ºİŒ8¦Œ £œ-
-Bsquid:S1148ö"#Use a logger to log this exception.(òçøì8¦Œ £œ-
-nsquid:S2095š"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÆÄ„­8¦Œ £œ-
-fsquid:S2095•"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ŒçÔì8¦Œ £œ-
-Bsquid:S1148´"#Use a logger to log this exception.(òçøì8¦Œ £œ-
-ssquid:S2095ş"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(•µª¼şÿÿÿÿ8¦Œ £œ-
-nsquid:S2095¿"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‚ĞÕƒ8¦Œ £œ-
-Qsquid:S1135Û"2Complete the task associated to this TODO comment.(¡İ÷²8¦Œ £œ-
-\
-squid:S106ñ"9Replace this use of System.out or System.err by a logger.(í˜«şÿÿÿÿ8¦Œ £œ-
-fsquid:S2095¥"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ŒçÔì8¦Œ £œ-
-Tsquid:S3655Ã"5Call "result.isPresent()" before accessing the value.(ÃÇûŞ8¦Œ £œ-
-ksquid:S2095®"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(¿©ƒÉıÿÿÿÿ8¦Œ £œ-
-Qsquid:S1135ì"2Complete the task associated to this TODO comment.(Ï¸¦’8¦Œ £œ-
-Bsquid:S1148›"#Use a logger to log this exception.(òçøì8¦Œ £œ-
-\
-squid:S106é"9Replace this use of System.out or System.err by a logger.(Ñ—¾‰şÿÿÿÿ8¦Œ £œ-
-ssquid:S2095”"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(»ÆÅ×ÿÿÿÿÿ8¦Œ £œ-
-msquid:HiddenFieldCheckİ">Rename "customerId" which hides the field declared at line 52.(ãÆÍàúÿÿÿÿ8¦Œ £œ-
-’"squid:ClassVariableVisibilityCheckF"XMake currentState a static final constant or non-public and provide accessors if needed.(ÃøÏÛüÿÿÿÿ8¦Œ £œ-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÉÎò„ûÿÿÿÿ8¦Œ £œ-
-Bsquid:S1148·"#Use a logger to log this exception.(òçøì8¦Œ £œ-
-ssquid:S2095¤"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(•†Å·ıÿÿÿÿ8¦Œ £œ-
-Qsquid:S1135 "2Complete the task associated to this TODO comment.(Ù©Úã8¦Œ £œ-
+fsquid:S2095 "GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ŒçÔì8¦Œ £œ-
+Gsquid:S1125ë")Remove the literal "false" boolean value.(¶³Æy8ûœ¶ô-
+fsquid:S2095°"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ŒçÔì8¦Œ £œ-
+ksquid:S2095"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(¿©ƒÉıÿÿÿÿ8Ô–ô-
+ssquid:S2095Ÿ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(»ÆÅ×ÿÿÿÿÿ8¦Œ £œ-
+Bsquid:S1148Â"#Use a logger to log this exception.(òçøì8¦Œ £œ-
+\squid:S1155É">Use isEmpty() to check whether the collection is empty or not.(¿½Æ78Ììªô-
+Ysquid:S1141€"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8Ô–ô-
+vsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï½Èüúÿÿÿÿ8Ğòó-
+nsquid:S2095­"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(åçˆã8Ô–ô-
+Esquid:S1481¸"&Remove this unused "i" local variable.(ãïøŸ8Ô–ô-
+Bsquid:S1148¢"#Use a logger to log this exception.(òçøì8Ô–ô-
+nsquid:S2095î"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÆÄ„­8Ô–ô-
+Gsquid:S1125ª")Remove the literal "false" boolean value.(¶³Æy8®ü¹ô-
+Ysquid:S1611Ê":Remove the parentheses around the "errorMessage" parameter(Èì‡–8¶Ç®ô-
+qsquid:S00117˜"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í³Šˆ8²Ïóó-
+msquid:HiddenFieldCheck¯">Rename "customerId" which hides the field declared at line 57.(ãÆÍàúÿÿÿÿ8Ô–ô-
+Bsquid:S1148Å"#Use a logger to log this exception.(òçøì8Ô–ô-
+nsquid:S2095‘"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‚ĞÕƒ8Ô–ô-
+Bsquid:S1148Ñ"#Use a logger to log this exception.(òçøì8Ô–ô-
+Bsquid:S1148†"#Use a logger to log this exception.(òçøì8Ô–ô-
+qsquid:S00117›"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú÷Ù†8õòó-
+ssquid:S2095¯"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(•†Å·ıÿÿÿÿ8¦Œ £œ-
+Xsquid:S1191"5Use classes from the Java API instead of Sun classes.(™¦èûÿÿÿÿ8Œ–úó-
+Bsquid:S1148¦"#Use a logger to log this exception.(òçøì8¦Œ £œ-
+Esquid:S1481À"&Remove this unused "x" local variable.(ğ„Æß8Ô–ô-
+nsquid:S2095º"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ç¼—È8Ô–ô-
+ssquid:S2095Í"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(•µª¼şÿÿÿÿ8Ô–ô-
+Ksquid:S1602",Remove useless curly braces around statement(ÃÉş©8¸Íçğ-
+Tsquid:S1854À"5Remove this useless assignment to local variable "x".(ğ„Æß8Ô–ô-
+Tsquid:S3655Î"5Call "result.isPresent()" before accessing the value.(ÃÇûŞ8¦Œ £œ-
+vsquid:S00117š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ’Ä›şÿÿÿÿ8€¶éó-
+vsquid:S00117œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùÍªùÿÿÿÿ8¿Ğòó-
+~squid:UselessImportCheck"NRemove this unused import 'com.sun.org.apache.xpath.internal.operations.Bool'.(™¦èûÿÿÿÿ8Œ–úó-
+vsquid:S00117™"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·‰–—şÿÿÿÿ8Ó¦óó-
+Tsquid:S1854¸"5Remove this useless assignment to local variable "i".(ãïøŸ8Ô–ô-
+vsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„ÍÚÈşÿÿÿÿ8±ˆôó-

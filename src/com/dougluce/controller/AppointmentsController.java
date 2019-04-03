@@ -35,7 +35,6 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 
-
 /**
  * FXML Controller class
  *
@@ -94,10 +93,10 @@ public class AppointmentsController implements Initializable {
   }
 
   private void handleTableviewClick() {
+    // Rubric G: Using a Lambda
     // Using a lambda here to decrease verbosity of click handler
     tableView.setOnMousePressed(event -> {
       if (event.isPrimaryButtonDown()) {
-        System.out.println(tableView.getSelectionModel().getSelectedItem().toString());
         selectedAppointment = tableView.getSelectionModel().getSelectedItem();
       }
     });
@@ -204,7 +203,7 @@ public class AppointmentsController implements Initializable {
             localStartTime.format(timeDTF), localEndTime.format(timeDTF), set.getString("appointment.contact"),
             customer, set.getString("appointment.appointmentId")));
       }
-
+      // Rubric G: Using a Lambda
       // Using a lambda for efficiency
       // This will get the customer's full name from the Customer object
       customerColumn.setCellValueFactory(

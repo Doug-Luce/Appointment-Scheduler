@@ -1,0 +1,5 @@
+
+fsquid:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ü†¾›
+:squid:S1148+"#Use a logger to log this exception.(òçøì
+dsquid:UselessImportCheck"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8çşÃò-
+^squid:S2095"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(„‡–

@@ -2,6 +2,7 @@ package com.dougluce.controller;
 
 import com.dougluce.SchedulerApplication;
 import com.dougluce.model.Appointment;
+import com.dougluce.model.Customer;
 import com.dougluce.utility.DatabaseManager;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
@@ -12,11 +13,14 @@ import javafx.scene.control.*;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 
@@ -50,6 +54,8 @@ public class AppointmentEditController implements Initializable {
 
   @Override
   public void initialize(URL url, ResourceBundle rb) {
+    // Rubric G: Show the use of a Lambda
+    // Using a Lambda to increase efficiency and reduce verbosity
     Platform.runLater(() -> {
       System.out.println(appointment.toString());
       populateAppointmentForm(appointment);
@@ -61,7 +67,6 @@ public class AppointmentEditController implements Initializable {
 
   @FXML
   private void handleCancel() throws IOException {
-    System.out.println("Go to Appointment Screen");
     showAppointmentsPane();
   }
 
@@ -71,13 +76,14 @@ public class AppointmentEditController implements Initializable {
 
   @FXML
   private void handleSave() throws IOException{
-    System.out.println(getAppointmentFromForm());
+    if (!validateAppointmentForm()) {
+      return;
+    }
     updateAppointment(getAppointmentFromForm());
     showAppointmentsPane();
   }
 
   private void updateAppointment(Appointment appointment) {
-    System.out.println(appointment);
     String updateAppointmentStatement = "UPDATE appointment SET customerId = ?, title = ?, description = ?, contact = ?, start = ?, end = ?, lastUpdate = CURRENT_TIMESTAMP WHERE appointmentId = ?";
     LocalDate localDate = datePicker.getValue();
     LocalTime startTime = LocalTime.parse(appointment.getStartTime(), timeFormatter);
@@ -150,6 +156,94 @@ public class AppointmentEditController implements Initializable {
     endTimeComboBox.getSelectionModel().select(endLocalDateTime.toLocalTime().format(timeFormatter));
     datePicker.setValue(LocalDate.parse(appointment.getStartTime(), dateTimeFormatter));
     customerNameLabel.setText(appointment.getCustomer().getFullName());
+  }
+
+  private boolean validateAppointmentForm() {
+    String _appointmentTitle = appointmentTitle.getText();
+    Object _type = typeComboBox.getValue();
+    String _contact = contact.getText();
+    String _startTime = startTimeComboBox.getValue().toString();
+    String _endTime = endTimeComboBox.getValue().toString();
+    LocalDate _localDate = datePicker.getValue();
+
+    List<String> errorMessages = new ArrayList<>();
+
+    if (_appointmentTitle == null || _appointmentTitle.length() < 3) {
+      errorMessages.add("Please set an appointment title that is at least 3 characters");
+    }
+
+    if (_type == null) {
+      errorMessages.add("Please choose a description");
+    }
+
+    if (_contact == null) {
+      errorMessages.add("Error loading username");
+    }
+
+    if (_localDate == null) {
+      errorMessages.add("Please select a date");
+    }
+
+    LocalTime startTime = LocalTime.parse(_startTime, timeFormatter);
+    LocalTime endTime = LocalTime.parse(_endTime, timeFormatter);
+
+    LocalDateTime startDateTime = LocalDateTime.of(_localDate, startTime);
+    LocalDateTime endDateTime = LocalDateTime.of(_localDate, endTime);
+
+    ZonedDateTime startUTC = startDateTime.atZone(ZoneId.systemDefault()).withZoneSameInstant(ZoneId.of("UTC"));
+    ZonedDateTime endUTC = endDateTime.atZone(ZoneId.systemDefault()).withZoneSameInstant(ZoneId.of("UTC"));
+
+    if (startUTC == null) {
+      errorMessages.add("Please select a start time");
+    }
+
+    if (endUTC == null) {
+      errorMessages.add("Please select an end time");
+    }
+
+    if (endUTC.isBefore(startUTC) || endUTC.equals(startUTC)) {
+      errorMessages.add("Please select an end time that is before the start time");
+    }
+
+    if (checkAppointmentForConflict(startUTC, endUTC)) {
+      errorMessages.add("Selected appointment times conflict with an exiting appointment. Please select a new time");
+    }
+
+    if (errorMessages.size() > 0) {
+      errorMessages.forEach((errorMessage) -> {
+        Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+        errorAlert.setHeaderText("Please Check Customer Form ");
+        errorAlert.setContentText(errorMessage);
+        errorAlert.showAndWait();
+      });
+      return false;
+    }
+
+    return true;
+  }
+
+  private boolean checkAppointmentForConflict(ZonedDateTime startTime, ZonedDateTime endTime) {
+    String findAppointmentStatement = "SELECT * FROM appointment WHERE (? BETWEEN start AND end OR ? BETWEEN start AND end OR ? < start AND ? > end) AND (createdBy = ? AND appointmentId != ?)";
+    String _appointmentId = appointment.getAppointmentId();
+
+    try {
+      PreparedStatement statement = DatabaseManager.getDatabaseConnection().prepareStatement(findAppointmentStatement);
+      statement.setTimestamp(1, Timestamp.valueOf(startTime.toLocalDateTime()));
+      statement.setTimestamp(2, Timestamp.valueOf(endTime.toLocalDateTime()));
+      statement.setTimestamp(3, Timestamp.valueOf(startTime.toLocalDateTime()));
+      statement.setTimestamp(4, Timestamp.valueOf(endTime.toLocalDateTime()));
+      statement.setString(5, username);
+      statement.setString(6, _appointmentId);
+      ResultSet set = statement.executeQuery();
+
+      if (set.next()) {
+        return true;
+      }
+    } catch (SQLException exception) {
+      exception.printStackTrace();
+    }
+
+    return false;
   }
 
   private Appointment getAppointmentFromForm() {

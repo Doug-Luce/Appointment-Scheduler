@@ -1,14 +1,21 @@
 
-msquid:S2095R"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™ÆÉÉ8­’Ù­œ-
-V
-squid:S106E"9Replace this use of System.out or System.err by a logger.(Œå°È8æ›µ¯œ-
-nsquid:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¿·µ¡8»¹é¯œ-
-[squid:UselessImportCheck"0Remove this unused import 'javax.xml.soap.Text'.(ŒşÄ™8æ¯Á¯œ-
-Asquid:S1148^"#Use a logger to log this exception.(òçøì8°ÃÙ­œ-
-esquid:S2095S"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ŒçÔì8­’Ù­œ-
-[
-squid:S106:"9Replace this use of System.out or System.err by a logger.(ù¸–üÿÿÿÿ8úÈœ­œ-
-Dsquid:S1170"!Make this final field static too.(ØîÖÄûÿÿÿÿ8Ô‚á­œ-
-Rsquid:S1068"5Remove this unused "dateTimeFormatter" private field.(Ò¹ò-8Õ÷¶®œ-
-Vsquid:S1135—"2Complete the task associated to this TODO comment.(È¡éŒûÿÿÿÿ8şÑÿ¯œ-
-Bsquid:S1148£"#Use a logger to log this exception.(òçøì8·êè¯œ-
+esquid:S2095^"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ŒçÔì8­’Ù­œ-
+nsquid:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¿·µ¡8»¹é¯œ-
+Ysquid:S1611í":Remove the parentheses around the "errorMessage" parameter(Èì‡–8î…äû-
+vsquid:S00117¶"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å›ïùÿÿÿÿÿ8üÖû-
+csquid:S2259ä"DA "NullPointerException" could be thrown; "endUTC" is nullable here.(ÅÙ“Á8ÄÈı-
+fsquid:S2095ƒ"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ŒçÔì8ŠÕèü-
+nsquid:S2095ı"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÙÿŠş8Ñ’Ûü-
+Dsquid:S1170"!Make this final field static too.(ãòä»üÿÿÿÿ8œÈçğ-
+vsquid:S00117·"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ‚§“üÿÿÿÿ8üÖû-
+vsquid:S00117»"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿĞÑªşÿÿÿÿ8ÜŸü-
+Bsquid:S1148¯"#Use a logger to log this exception.(òçøì8·êè¯œ-
+vsquid:S00117¹"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»¬Û»ÿÿÿÿÿ8œ¥Ùû-
+\squid:S1155ì">Use isEmpty() to check whether the collection is empty or not.(¿½Æ78î…äû-
+Asquid:S1148i"#Use a logger to log this exception.(òçøì8°ÃÙ­œ-
+vsquid:S00117¸"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï¶ÛŒøÿÿÿÿ8üÖû-
+vsquid:S00117µ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’Ä£æùÿÿÿÿ8üÖû-
+msquid:S2095]"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™ÆÉÉ8­’Ù­œ-
+qsquid:S00117º"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ’§ó8•ŞÚû-
+Bsquid:S1148‰"#Use a logger to log this exception.(òçøì8Ñ’Ûü-
+squid:S2259è"["NullPointerException" will be thrown when invoking method "checkAppointmentForConflict()".(ÚÏ€·ıÿÿÿÿ8¿ÚÈı-

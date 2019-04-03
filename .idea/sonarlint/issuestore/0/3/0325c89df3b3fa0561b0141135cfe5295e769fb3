@@ -1,4 +1,4 @@
 
-]squid:UselessImportCheck"-Remove this unused import 'javafx.fxml.FXML'.(ÃÚ¢„þÿÿÿÿ8¹† £œ-
-[squid:UselessImportCheck"0Remove this unused import 'java.sql.Connection'.(¥ËôÖ8¹† £œ-
-isquid:CommentedOutCodeLines"<This block of commented-out lines of code should be removed.(¶ä†8ŠàÛ«œ-
+]squid:UselessImportCheck"-Remove this unused import 'javafx.fxml.FXML'.(ÃÚ¢„þÿÿÿÿ8¹† £œ-
+jsquid:CommentedOutCodeLine‘"<This block of commented-out lines of code should be removed.(¶ä†8ŠàÛ«œ-
+[squid:UselessImportCheck"0Remove this unused import 'java.sql.Connection'.(¥ËôÖ8¹† £œ-

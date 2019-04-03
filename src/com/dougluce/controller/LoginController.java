@@ -8,6 +8,7 @@ package com.dougluce.controller;
 import com.dougluce.SchedulerApplication;
 import com.dougluce.model.User;
 import com.dougluce.utility.DatabaseManager;
+import com.dougluce.utility.LoggerUtility;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 
@@ -52,6 +53,7 @@ public class LoginController implements Initializable {
   private String credentialDirection;
 
   SchedulerApplication schedulerApplication;
+  LoggerUtility loggerUtility = new LoggerUtility();
 
   @Override
   public void initialize(URL url, ResourceBundle rb) {
@@ -62,20 +64,23 @@ public class LoginController implements Initializable {
      * Adds a event handler to the passwordField input and fires the
      * login button when the enter key is pressed.
      */
+    // Rubric G: Demonstrating the use of a Lambda with justification
     // Using a lambda to fire the login button and make increase application efficiency
     passwordField.setOnKeyPressed((event -> {
       if (event.getCode().equals(KeyCode.ENTER)) {
         loginButton.fire();
       }
     }));
-
   }
 
   public void loginButtonHandler(ActionEvent event) throws IOException {
     String userName = usernameField.getText();
     String password = passwordField.getText();
 
+    // Requirements Rubric F: Exception handling for incorrect username and password
     if (validateUserLogin(userName, password)) {
+      // Rubric J: Providing a utility to track the users login
+      loggerUtility.log(userName + " logged in");
       Stage loginWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
       loginWindow.hide();
       schedulerApplication.showMain();

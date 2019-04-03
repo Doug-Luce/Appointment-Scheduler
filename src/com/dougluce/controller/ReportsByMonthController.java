@@ -1,6 +1,5 @@
 package com.dougluce.controller;
 
-import com.dougluce.SchedulerApplication;
 import com.dougluce.utility.DatabaseManager;
 import javafx.beans.binding.Bindings;
 import javafx.collections.FXCollections;
@@ -34,8 +33,6 @@ public class ReportsByMonthController implements Initializable {
       PreparedStatement statement = DatabaseManager.getDatabaseConnection().prepareStatement(getDescriptionCounts);
       ResultSet resultSet = statement.executeQuery();
       while(resultSet.next()) {
-        System.out.println(resultSet.getString("description"));
-        System.out.println(resultSet.getString("count"));
         pieChartData.add(new PieChart.Data(resultSet.getString("description"), resultSet.getInt("count")));
       }
 
@@ -43,7 +40,6 @@ public class ReportsByMonthController implements Initializable {
       pieChartData.forEach(data ->
         data.nameProperty().bind(Bindings.concat(data.getName(), " ", data.pieValueProperty().intValue()))
       );
-
 
     } catch (SQLException exception) {
 

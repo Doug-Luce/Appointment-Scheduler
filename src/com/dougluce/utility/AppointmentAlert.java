@@ -6,6 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class AppointmentAlert {
@@ -15,7 +17,6 @@ public class AppointmentAlert {
     this.currentUser = currentUser;
   }
 
-  // TODO Fix bug with this code showing upcoming appointments early
   public void checkAppointmentTime() {
     String getAppointmentsStatement = "SELECT start, customerName FROM appointment, customer WHERE contact = ? AND appointment.customerId = customer.customerId";
     try {
@@ -25,13 +26,15 @@ public class AppointmentAlert {
 
       while(resultSet.next()) {
         String customerName = resultSet.getString("customerName");
-        LocalDateTime appointmentStartTime = resultSet.getTimestamp("start").toLocalDateTime();
-        LocalDateTime currentTime = LocalDateTime.now();
-        if (currentTime.isBefore(appointmentStartTime.plusMinutes(15))) {
+        ZonedDateTime appointmentStartTime = resultSet.getTimestamp("start").toLocalDateTime().atZone(ZoneId.of("UTC"));
+        ZonedDateTime localAppointmentStartTime = appointmentStartTime.withZoneSameInstant(ZoneId.systemDefault());
+        ZonedDateTime currentTime = ZonedDateTime.now();
+
+        if (currentTime.isAfter(localAppointmentStartTime.minusMinutes(15)) && currentTime.isBefore(localAppointmentStartTime.plusMinutes(15))) {
           Alert alert = new Alert(Alert.AlertType.INFORMATION);
           alert.setTitle("Upcoming Appointment");
           alert.setContentText("You have an upcoming appointment with " + customerName + " at " +
-              appointmentStartTime.toLocalTime().format(DateTimeFormatter.ofPattern("h:mm a")));
+              localAppointmentStartTime.toLocalTime().format(DateTimeFormatter.ofPattern("h:mm a")));
           alert.showAndWait();
         }
       }

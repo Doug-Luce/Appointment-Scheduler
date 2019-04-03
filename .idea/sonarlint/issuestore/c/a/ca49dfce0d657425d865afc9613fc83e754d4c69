@@ -1,15 +1,12 @@
 
-?squid:S1170L"!Make this final field static too.(©Š¡´8…ˆ £œ-
-Bsquid:S1148â"#Use a logger to log this exception.(òçøì8…ˆ £œ-
-fsquid:S2095»"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ŒçÔì8…ˆ £œ-
-ssquid:S2095«"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(è¿÷öıÿÿÿÿ8…ˆ £œ-
-Ssquid:S3655s"5Call "result.isPresent()" before accessing the value.(ÃÇûŞ8…ˆ £œ-
-psquid:S00117Ñ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û•8…ˆ £œ-
-Bsquid:S1148¥"#Use a logger to log this exception.(òçøì8…ˆ £œ-
-Bsquid:S1148¯"#Use a logger to log this exception.(òçøì8…ˆ £œ-
-nsquid:S2095º"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™ÆÉÉ8…ˆ £œ-
-V
-squid:S106e"9Replace this use of System.out or System.err by a logger.(¬ÈîÅ8…ˆ £œ-
-Bsquid:S1148œ"#Use a logger to log this exception.(òçøì8…ˆ £œ-
-usquid:HiddenFieldCheckm"GRename "selectedAppointment" which hides the field declared at line 72.(®µ¡Åùÿÿÿÿ8…ˆ £œ-
-csquid:UselessImportCheck%"9Remove this unused import 'javax.swing.text.html.Option'.(¼Òì:8…ˆ £œ-
+Ssquid:S3655q"5Call "result.isPresent()" before accessing the value.(ÃÇûŞ8…ˆ £œ-
+Bsquid:S1148£"#Use a logger to log this exception.(òçøì8…ˆ £œ-
+fsquid:S2095¹"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ŒçÔì8…ˆ £œ-
+usquid:HiddenFieldCheckk"GRename "selectedAppointment" which hides the field declared at line 70.(®µ¡Åùÿÿÿÿ8…ˆ £œ-
+Bsquid:S1148š"#Use a logger to log this exception.(òçøì8…ˆ £œ-
+Bsquid:S1148­"#Use a logger to log this exception.(òçøì8…ˆ £œ-
+Bsquid:S1148ã"#Use a logger to log this exception.(òçøì8…ˆ £œ-
+ssquid:S2095©"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(è¿÷öıÿÿÿÿ8…ˆ £œ-
+nsquid:S2095¸"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™ÆÉÉ8…ˆ £œ-
+?squid:S1170J"!Make this final field static too.(©Š¡´8…ˆ £œ-
+psquid:S00117Ò"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û•8…ˆ £œ-

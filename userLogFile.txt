@@ -1,0 +1,40 @@
+Apr 02, 2019 6:22:05 AM com.dougluce.utility.LoggerUtility log
+INFO: test logged in
+Apr 02, 2019 6:22:32 AM com.dougluce.utility.LoggerUtility log
+INFO: doug logged in
+Apr 02, 2019 6:22:48 AM com.dougluce.utility.LoggerUtility log
+INFO: user logged in
+Apr 02, 2019 6:36:43 AM com.dougluce.utility.LoggerUtility log
+INFO: test logged in
+Apr 02, 2019 6:37:49 AM com.dougluce.utility.LoggerUtility log
+INFO: test logged in
+Apr 02, 2019 8:45:42 AM com.dougluce.utility.LoggerUtility log
+INFO: test logged in
+Apr 02, 2019 8:46:25 AM com.dougluce.utility.LoggerUtility log
+INFO: test logged in
+Apr 02, 2019 8:47:05 AM com.dougluce.utility.LoggerUtility log
+INFO: test logged in
+Apr 02, 2019 6:51:23 AM com.dougluce.utility.LoggerUtility log
+INFO: test logged in
+Apr 02, 2019 6:52:30 AM com.dougluce.utility.LoggerUtility log
+INFO: test logged in
+Apr 02, 2019 8:53:46 AM com.dougluce.utility.LoggerUtility log
+INFO: test logged in
+Apr 02, 2019 8:54:30 AM com.dougluce.utility.LoggerUtility log
+INFO: test logged in
+Apr 02, 2019 12:02:45 PM com.dougluce.utility.LoggerUtility log
+INFO: test logged in
+Apr 02, 2019 12:21:55 PM com.dougluce.utility.LoggerUtility log
+INFO: test logged in
+Apr 02, 2019 12:52:13 PM com.dougluce.utility.LoggerUtility log
+INFO: test logged in
+Apr 02, 2019 12:55:01 PM com.dougluce.utility.LoggerUtility log
+INFO: test logged in
+Apr 02, 2019 12:56:10 PM com.dougluce.utility.LoggerUtility log
+INFO: test logged in
+Apr 02, 2019 1:08:32 PM com.dougluce.utility.LoggerUtility log
+INFO: test logged in
+Apr 02, 2019 1:41:10 PM com.dougluce.utility.LoggerUtility log
+INFO: test logged in
+Apr 02, 2019 5:50:19 PM com.dougluce.utility.LoggerUtility log
+INFO: test logged in

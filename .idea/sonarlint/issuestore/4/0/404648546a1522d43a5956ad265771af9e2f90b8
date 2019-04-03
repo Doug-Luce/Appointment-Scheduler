@@ -1,0 +1,6 @@
+
+:squid:S1148u"#Use a logger to log this exception.(òçøì
+8squid:S11706"!Make this final field static too.(ãŸìà
+fsquid:S2095J"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™ÆÉÉ
+hsquid:S00117e"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û•
+^squid:S2095L"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ŒçÔì

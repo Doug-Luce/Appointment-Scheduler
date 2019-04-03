@@ -5,6 +5,7 @@ import com.dougluce.model.City;
 import com.dougluce.model.Customer;
 import com.dougluce.utility.CustomerViewState;
 import com.dougluce.utility.DatabaseManager;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -16,6 +17,8 @@ import javafx.util.StringConverter;
 
 import java.net.URL;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
@@ -90,6 +93,7 @@ public class CustomersController implements Initializable {
     });
 
     // Event handler for combo box, automatically set country id
+    // Rubric G: Using a Lambda here to increase efficiency
     cityComboBox.setOnAction((event -> {
       City selectedCity = (City) cityComboBox.getSelectionModel().getSelectedItem();
       int countryId = selectedCity.getCountryID();
@@ -106,7 +110,7 @@ public class CustomersController implements Initializable {
     getAndPopulateCityComboBox();
     getAndPopulateTableView();
 
-    // Event handler when tableview is clicked
+    // Event handler when Table View is clicked
     handleTableviewClick();
 
     // Disable save and cancel button
@@ -132,7 +136,6 @@ public class CustomersController implements Initializable {
     // Using a lambda here to decrease verbose click handler
     tableView.setOnMousePressed(event -> {
       if (event.isPrimaryButtonDown()) {
-        System.out.println(tableView.getSelectionModel().getSelectedItem());
         populateCustomerForm(tableView.getSelectionModel().getSelectedItem());
       }
     });
@@ -244,7 +247,6 @@ public class CustomersController implements Initializable {
 
   @FXML
   private void handleSave() {
-    System.out.println(currentState);
     if (currentState == CustomerViewState.EDIT) {
       updateCustomer(getCustomerFromForm());
       currentState = CustomerViewState.DEFAULT;
@@ -272,6 +274,70 @@ public class CustomersController implements Initializable {
 
     return customerFromForm;
   }
+  // Rubric F: Provide exception control
+  private boolean validateCustomerForm() {
+    // Rubric
+    String _name = name.getText();
+    String _address1 = address1.getText();
+    String _address2 = address2.getText();
+    String _pNumber = pNumber.getText();
+    String _zipCode = zipCode.getText();
+    String _country = country.getText();
+    City _city = (City) cityComboBox.getSelectionModel().getSelectedItem();
+    List<String> errorMessages = new ArrayList<>();
+
+    try {
+      Integer.parseInt(_pNumber);
+    } catch (NumberFormatException exception) {
+      errorMessages.add("Phone number must be a number");
+    }
+
+    try {
+      Integer.parseInt(_zipCode);
+    } catch (NumberFormatException exception) {
+      errorMessages.add("Zip code must be a number");
+    }
+
+    if (_name == null || _name.length() < 2) {
+      errorMessages.add("Please enter a customer name that is over 2 characters");
+    }
+
+    if (_address1 == null || _address1.length() < 5) {
+      errorMessages.add("Please enter an address that is at least 5 characters");
+    }
+
+    if (_address2 == null || _address2.length() < 3) {
+      errorMessages.add("Please enter an address that is at least 3 characters");
+    }
+
+    if (_pNumber == null || _pNumber.length() < 9) {
+      errorMessages.add("Please enter a phone number that is at least 9 digits including area code");
+    }
+
+    if (_zipCode == null || _zipCode.length() < 5) {
+      errorMessages.add("Please enter a correct zipcode");
+    }
+
+    if (_country == null) {
+      errorMessages.add("Select a city. Country will be selected based on city selection");
+    }
+
+    if (_city == null) {
+      errorMessages.add(("Select a city"));
+    }
+
+    if (errorMessages.size() > 0) {
+      errorMessages.forEach((errorMessage) -> {
+        Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+        errorAlert.setHeaderText("Please Check Customer Form ");
+        errorAlert.setContentText(errorMessage);
+        errorAlert.showAndWait();
+      });
+      return false;
+    }
+
+    return true;
+  }
 
   private void setEditMode(Boolean bool) {
     isFormEditable(true);
@@ -293,6 +359,10 @@ public class CustomersController implements Initializable {
 
   private void addCustomer(Customer customer) {
     try {
+      // Validate customer form before saving
+      if (validateCustomerForm() == false) {
+        return;
+      }
       PreparedStatement addAddressStatement = DatabaseManager.getDatabaseConnection().prepareStatement("INSERT INTO address (address, address2, cityId, postalCode, phone, createDate, createdBy, lastUpdate, lastUpdateBy) VALUES (?, ?, ?, ?, ?, CURRENT_TIMESTAMP, ?, CURRENT_TIMESTAMP, ?)", Statement.RETURN_GENERATED_KEYS);
       addAddressStatement.setString(1, customer.getAddress1());
       addAddressStatement.setString(2, customer.getAddress2());
@@ -315,7 +385,6 @@ public class CustomersController implements Initializable {
         ResultSet generatedKeys = addAddressStatement.getGeneratedKeys();
         if (generatedKeys.next()) {
           generatedAddressId = generatedKeys.getInt(1);
-          System.out.println(" Generated Address ID is: " + generatedAddressId);
         }
       } catch (SQLException exception) {
         exception.printStackTrace();
@@ -352,9 +421,11 @@ public class CustomersController implements Initializable {
 
   private void updateCustomer(Customer customer) {
 
-    System.out.println(customer);
     try {
-
+      // Validate customer form before saving
+      if (validateCustomerForm() == false) {
+        return;
+      }
       PreparedStatement updateAddressStatement = DatabaseManager.getDatabaseConnection().prepareStatement("UPDATE customer, address, city,country SET address.address = ?, address.address2 = ?, address.postalCode = ?, address.phone = ?, address.cityId = ?, address.lastUpdate = CURRENT_TIMESTAMP, address.lastUpdateBy = ? WHERE customer.customerId = ? AND customer.addressId = address.addressId AND address.cityId = city.cityId AND city.countryId = country.countryId");
       int cityId = customer.getCity().getCityID();
       int customerId = Integer.parseInt(customer.getID());
@@ -367,7 +438,6 @@ public class CustomersController implements Initializable {
       updateAddressStatement.setInt(7, customerId);
 
       int i = updateAddressStatement.executeUpdate();
-      System.out.println("updateAddressStatement updated " + i + " records");
 
       PreparedStatement updateCustomerStatement = DatabaseManager.getDatabaseConnection().prepareStatement("UPDATE customer, city, address SET customerName = ?, customer.lastUpdateBy = ?, customer.lastUpdate = CURRENT_TIMESTAMP WHERE customer.customerId = ? AND address.cityId = city.cityId AND address.addressId = customer.addressId");
       
@@ -376,7 +446,6 @@ public class CustomersController implements Initializable {
       updateCustomerStatement.setString(3, customer.getID());
 
       int x = updateCustomerStatement.executeUpdate();
-      System.out.println("updateCustomerStatement updated " + x + " records");
 
       getAndPopulateTableView();
       populateCustomerForm(customer);
